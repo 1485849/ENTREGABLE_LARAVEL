@@ -123,8 +123,8 @@
     <div class="header">
         <div class="logo">Multiservicios Sanny</div>
         <ul class="menu">
-            <li><a href="#">Registrarse</a></li>
-            <li><a href="#">Iniciar sesión</a></li>
+        <li><a href="{{ route('registro') }}">Registrarse</a></li>
+        <li><a href="{{ route('inicio_sesion') }}">Iniciar sesión</a></li>
             <li><a href="#">Productos</a></li>
         </ul>
     </div>

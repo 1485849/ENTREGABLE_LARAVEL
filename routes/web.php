@@ -14,7 +14,14 @@ Route::get('/', function () {
 
 Route::get('/registro', function () {
     return view('registro');
-});
+})->name('registro');
+
+
+
+Route::get('/inicio_sesion', function () {
+    return view('inicio_sesion');
+})->name('inicio_sesion');
+
 
 // Corregimos la definición de la ruta de producto1 para incluir el método name()
 Route::get('/producto1', function () {

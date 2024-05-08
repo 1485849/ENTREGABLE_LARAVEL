@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Brush+Script+MT&display=swap" rel="stylesheet">
 
-<title>Registro - Multiservicios Sanny</title>
+<title>Inicio de Sesión - Instagram</title>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -52,8 +52,6 @@
   }
   
   input[type="text"],
-  input[type="email"],
-  input[type="tel"],
   input[type="password"],
   button {
     width: calc(100% - 20px);
@@ -77,6 +75,47 @@
     margin-left: 8px; /* Agrega un pequeño margen izquierdo */
   }
   
+  .or {
+    margin: 20px 0 ;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: center; /* Alineación centrada */
+    font-size: 14px;
+    color: #003569;
+    text-decoration: none;
+    margin-bottom: 15px;
+  }
+  
+  .signup-link {
+    text-align: center; /* Alineación centrada */
+    margin-top: 15px;
+  }
+  
+  .signup-link span {
+    color: #999;
+  }
+  
+  .signup-link a {
+    color: #003569;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .download-app {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .download-app img {
+    width: 100px;
+    margin: 0 5px;
+  }
+
   footer {
     margin-top: 10px;
     background-color: transparent;
@@ -128,15 +167,30 @@
 </div>
 
 <div class="container">
-  <h2>Registro - Multiservicios Sanny</h2>
-  <form id="registerForm">
-    <input type="text" placeholder="Nombre" id="name" required>
-    <input type="email" placeholder="Correo electrónico" id="email" required>
-    <input type="tel" placeholder="Número de teléfono" id="phone" required>
+  <h2>Multiservicos Sanny</h2>
+  <form id="loginForm">
+    <input type="text" placeholder="Teléfono, usuario o correo electrónico" id="username" required>
     <input type="password" placeholder="Contraseña" id="password" required>
-    <input type="password" placeholder="Confirmar contraseña" id="confirmPassword" required>
-    <button type="submit">Registrarse</button>
+    <button type="submit">Entrar</button>
   </form>
+  <div class="or">o</div>
+  <button id="facebookLogin">Iniciar sesión con Facebook</button>
+  <a href="#" class="forgot-password">¿Has olvidado la contraseña?</a>
+  <div class="signup-link">
+    <span>¿No tienes una cuenta?</span>
+    <a href="#">Regístrate</a>
+  </div>
+  <div class="download-app">
+    <span>Descarga la aplicación.</span>
+    <div>
+      <a href="#">
+        <img src="https://static.cdninstagram.com/rsrc.php/v3/yd/r/xOhODS7viZl.png" alt="Google Play">
+      </a>
+      <a href="#">
+        <img src="https://static.cdninstagram.com/rsrc.php/v3/y9/r/LjIQEL8csb0.png" alt="Microsoft Store">
+      </a>
+    </div>
+  </div>
 </div>
 
 <footer>
@@ -163,6 +217,14 @@
     <p>© 2024 Instagram from Meta</p>
   </div>
 </footer>
+
+<script>
+  document.getElementById("facebookLogin").addEventListener("click", function() {
+    // Aquí puedes agregar la lógica para el inicio de sesión con Facebook
+    alert("Iniciando sesión con Facebook...");
+  });
+</script>
+
 
 </body>
 </html>
